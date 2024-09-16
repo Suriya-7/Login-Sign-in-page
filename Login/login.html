@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="cotainer">
+    <div class="img">
+        <img src="img.svg" alt="Sign Images">
+    </div>
+    <div class="form-container">
+        <div class="notification" id="notification"></div>
+        <form action="home.html" method="post" onsubmit="return login()">
+            <h2>Log In</h2>
+
+            <div class="form-inputs">
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-inputs">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <!-- Correcting the link text -->
+            <a href="index.html">Register an account?</a>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>

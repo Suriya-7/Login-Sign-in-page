@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="cotainer">
+    <div class="img">
+        <img src="img.svg" alt="Sign Images">
+    </div>
+    <div class="form-container">
+        <div class="notification" id="notification"></div>
+        <form action="home.html" method="post" onsubmit="return validation()">
+            <h2>Sign Up</h2>
+            <div class="form-inputs">
+                <input type="text" id="name" name="username" placeholder="Username">
+            </div>
+            <div class="form-inputs">
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-inputs">
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-inputs">
+                <input type="password" id="conformpass" name="verifypassword" placeholder="Confirm Password">
+            </div>
+            <!-- Correcting the text in the link -->
+            <a href="login.html">Already have an account?</a>
+
+            <button type="submit">Sign-up</button>
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>
